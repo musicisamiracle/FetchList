@@ -119,22 +119,16 @@
 		AB068C472554DE4700F8B885 /* FetchList */ = {
 			isa = PBXGroup;
 			children = (
+				AB068CB92555E69900F8B885 /* Utility */,
+				AB068CB82555E68000F8B885 /* Model */,
+				AB068CB72555E66800F8B885 /* Presenter */,
+				AB068CB62555E63600F8B885 /* View */,
 				AB068C482554DE4700F8B885 /* AppDelegate.swift */,
 				AB068C4A2554DE4700F8B885 /* SceneDelegate.swift */,
-				AB068C4C2554DE4700F8B885 /* ViewController.swift */,
-				AB068C4E2554DE4700F8B885 /* Main.storyboard */,
 				AB068C512554DE4A00F8B885 /* Assets.xcassets */,
 				AB068C532554DE4A00F8B885 /* LaunchScreen.storyboard */,
 				AB068C562554DE4A00F8B885 /* Info.plist */,
-				AB068C7E2554DFC700F8B885 /* MainNavigationController.swift */,
 				AB068C832554E04200F8B885 /* ViewControllerFactory.swift */,
-				AB068C8E2555C66E00F8B885 /* ListService.swift */,
-				AB068C932555C6C500F8B885 /* ListResponse.swift */,
-				AB068C982555C8D900F8B885 /* Configuration.swift */,
-				AB068C9D2555CD6D00F8B885 /* ListTableViewCell.swift */,
-				AB068CA22555CF1D00F8B885 /* ListPresenter.swift */,
-				AB068CA72555CF9B00F8B885 /* ListSection.swift */,
-				AB068CAC2555D15700F8B885 /* Array+NullableIndex.swift */,
 			);
 			path = FetchList;
 			sourceTree = "<group>";
@@ -156,6 +150,44 @@
 				AB068C6C2554DE4A00F8B885 /* Info.plist */,
 			);
 			path = FetchListUITests;
+			sourceTree = "<group>";
+		};
+		AB068CB62555E63600F8B885 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB068C7E2554DFC700F8B885 /* MainNavigationController.swift */,
+				AB068C4C2554DE4700F8B885 /* ViewController.swift */,
+				AB068C4E2554DE4700F8B885 /* Main.storyboard */,
+				AB068C9D2555CD6D00F8B885 /* ListTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB068CB72555E66800F8B885 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AB068CA22555CF1D00F8B885 /* ListPresenter.swift */,
+				AB068CA72555CF9B00F8B885 /* ListSection.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AB068CB82555E68000F8B885 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB068C8E2555C66E00F8B885 /* ListService.swift */,
+				AB068C932555C6C500F8B885 /* ListResponse.swift */,
+				AB068C982555C8D900F8B885 /* Configuration.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB068CB92555E69900F8B885 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				AB068CAC2555D15700F8B885 /* Array+NullableIndex.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

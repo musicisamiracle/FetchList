@@ -15,6 +15,8 @@
 		AB068C552554DE4A00F8B885 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB068C532554DE4A00F8B885 /* LaunchScreen.storyboard */; };
 		AB068C602554DE4A00F8B885 /* FetchListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB068C5F2554DE4A00F8B885 /* FetchListTests.swift */; };
 		AB068C6B2554DE4A00F8B885 /* FetchListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB068C6A2554DE4A00F8B885 /* FetchListUITests.swift */; };
+		AB068C7F2554DFC700F8B885 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB068C7E2554DFC700F8B885 /* MainNavigationController.swift */; };
+		AB068C842554E04200F8B885 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB068C832554E04200F8B885 /* ViewControllerFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		AB068C662554DE4A00F8B885 /* FetchListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB068C6A2554DE4A00F8B885 /* FetchListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchListUITests.swift; sourceTree = "<group>"; };
 		AB068C6C2554DE4A00F8B885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB068C7E2554DFC700F8B885 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		AB068C832554E04200F8B885 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				AB068C512554DE4A00F8B885 /* Assets.xcassets */,
 				AB068C532554DE4A00F8B885 /* LaunchScreen.storyboard */,
 				AB068C562554DE4A00F8B885 /* Info.plist */,
+				AB068C7E2554DFC700F8B885 /* MainNavigationController.swift */,
+				AB068C832554E04200F8B885 /* ViewControllerFactory.swift */,
 			);
 			path = FetchList;
 			sourceTree = "<group>";
@@ -259,7 +265,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB068C4D2554DE4700F8B885 /* ViewController.swift in Sources */,
+				AB068C842554E04200F8B885 /* ViewControllerFactory.swift in Sources */,
 				AB068C492554DE4700F8B885 /* AppDelegate.swift in Sources */,
+				AB068C7F2554DFC700F8B885 /* MainNavigationController.swift in Sources */,
 				AB068C4B2554DE4700F8B885 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,7 +454,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Dane-Thomas.FetchList";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -465,7 +473,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Dane-Thomas.FetchList";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

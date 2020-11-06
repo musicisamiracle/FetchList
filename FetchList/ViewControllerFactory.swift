@@ -15,7 +15,10 @@ struct ViewControllerFactory {
     }
     
     static func makeViewController() -> ViewController {
-        let vc = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        let vc = storyboard.instantiateViewController(identifier: "ViewController") { (coder) -> ViewController? in
+            let presenter = ListPresenter(listService: ListService(session: .shared))
+            return ViewController(coder: coder, presenter: presenter)
+        }
         return vc
     }
 }

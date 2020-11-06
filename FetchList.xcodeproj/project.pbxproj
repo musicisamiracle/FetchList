@@ -14,7 +14,6 @@
 		AB068C522554DE4A00F8B885 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB068C512554DE4A00F8B885 /* Assets.xcassets */; };
 		AB068C552554DE4A00F8B885 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB068C532554DE4A00F8B885 /* LaunchScreen.storyboard */; };
 		AB068C602554DE4A00F8B885 /* FetchListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB068C5F2554DE4A00F8B885 /* FetchListTests.swift */; };
-		AB068C6B2554DE4A00F8B885 /* FetchListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB068C6A2554DE4A00F8B885 /* FetchListUITests.swift */; };
 		AB068C7F2554DFC700F8B885 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB068C7E2554DFC700F8B885 /* MainNavigationController.swift */; };
 		AB068C842554E04200F8B885 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB068C832554E04200F8B885 /* ViewControllerFactory.swift */; };
 		AB068C8F2555C66E00F8B885 /* ListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB068C8E2555C66E00F8B885 /* ListService.swift */; };
@@ -35,13 +34,6 @@
 			remoteGlobalIDString = AB068C442554DE4700F8B885;
 			remoteInfo = FetchList;
 		};
-		AB068C672554DE4A00F8B885 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AB068C3D2554DE4700F8B885 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AB068C442554DE4700F8B885;
-			remoteInfo = FetchList;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -56,9 +48,6 @@
 		AB068C5B2554DE4A00F8B885 /* FetchListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB068C5F2554DE4A00F8B885 /* FetchListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchListTests.swift; sourceTree = "<group>"; };
 		AB068C612554DE4A00F8B885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB068C662554DE4A00F8B885 /* FetchListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB068C6A2554DE4A00F8B885 /* FetchListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchListUITests.swift; sourceTree = "<group>"; };
-		AB068C6C2554DE4A00F8B885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB068C7E2554DFC700F8B885 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		AB068C832554E04200F8B885 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 		AB068C8E2555C66E00F8B885 /* ListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListService.swift; sourceTree = "<group>"; };
@@ -86,13 +75,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB068C632554DE4A00F8B885 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -101,7 +83,6 @@
 			children = (
 				AB068C472554DE4700F8B885 /* FetchList */,
 				AB068C5E2554DE4A00F8B885 /* FetchListTests */,
-				AB068C692554DE4A00F8B885 /* FetchListUITests */,
 				AB068C462554DE4700F8B885 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,7 +92,6 @@
 			children = (
 				AB068C452554DE4700F8B885 /* FetchList.app */,
 				AB068C5B2554DE4A00F8B885 /* FetchListTests.xctest */,
-				AB068C662554DE4A00F8B885 /* FetchListUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,15 +121,6 @@
 				AB068CB12555DF6B00F8B885 /* MockListService.swift */,
 			);
 			path = FetchListTests;
-			sourceTree = "<group>";
-		};
-		AB068C692554DE4A00F8B885 /* FetchListUITests */ = {
-			isa = PBXGroup;
-			children = (
-				AB068C6A2554DE4A00F8B885 /* FetchListUITests.swift */,
-				AB068C6C2554DE4A00F8B885 /* Info.plist */,
-			);
-			path = FetchListUITests;
 			sourceTree = "<group>";
 		};
 		AB068CB62555E63600F8B885 /* View */ = {
@@ -228,24 +199,6 @@
 			productReference = AB068C5B2554DE4A00F8B885 /* FetchListTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		AB068C652554DE4A00F8B885 /* FetchListUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AB068C752554DE4A00F8B885 /* Build configuration list for PBXNativeTarget "FetchListUITests" */;
-			buildPhases = (
-				AB068C622554DE4A00F8B885 /* Sources */,
-				AB068C632554DE4A00F8B885 /* Frameworks */,
-				AB068C642554DE4A00F8B885 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AB068C682554DE4A00F8B885 /* PBXTargetDependency */,
-			);
-			name = FetchListUITests;
-			productName = FetchListUITests;
-			productReference = AB068C662554DE4A00F8B885 /* FetchListUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -259,10 +212,6 @@
 						CreatedOnToolsVersion = 12.0.1;
 					};
 					AB068C5A2554DE4A00F8B885 = {
-						CreatedOnToolsVersion = 12.0.1;
-						TestTargetID = AB068C442554DE4700F8B885;
-					};
-					AB068C652554DE4A00F8B885 = {
 						CreatedOnToolsVersion = 12.0.1;
 						TestTargetID = AB068C442554DE4700F8B885;
 					};
@@ -283,7 +232,6 @@
 			targets = (
 				AB068C442554DE4700F8B885 /* FetchList */,
 				AB068C5A2554DE4A00F8B885 /* FetchListTests */,
-				AB068C652554DE4A00F8B885 /* FetchListUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -300,13 +248,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		AB068C592554DE4A00F8B885 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AB068C642554DE4A00F8B885 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -344,14 +285,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB068C622554DE4A00F8B885 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AB068C6B2554DE4A00F8B885 /* FetchListUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -359,11 +292,6 @@
 			isa = PBXTargetDependency;
 			target = AB068C442554DE4700F8B885 /* FetchList */;
 			targetProxy = AB068C5C2554DE4A00F8B885 /* PBXContainerItemProxy */;
-		};
-		AB068C682554DE4A00F8B885 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AB068C442554DE4700F8B885 /* FetchList */;
-			targetProxy = AB068C672554DE4A00F8B885 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -585,46 +513,6 @@
 			};
 			name = Release;
 		};
-		AB068C762554DE4A00F8B885 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MBDF9Z8ZCX;
-				INFOPLIST_FILE = FetchListUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Dane-Thomas.FetchListUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FetchList;
-			};
-			name = Debug;
-		};
-		AB068C772554DE4A00F8B885 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MBDF9Z8ZCX;
-				INFOPLIST_FILE = FetchListUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Dane-Thomas.FetchListUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FetchList;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -651,15 +539,6 @@
 			buildConfigurations = (
 				AB068C732554DE4A00F8B885 /* Debug */,
 				AB068C742554DE4A00F8B885 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AB068C752554DE4A00F8B885 /* Build configuration list for PBXNativeTarget "FetchListUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AB068C762554DE4A00F8B885 /* Debug */,
-				AB068C772554DE4A00F8B885 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -18,9 +18,19 @@ protocol ListServiceable {
     func fetchList(completion: @escaping (Result<ListResponse, Error>) -> Void)
 }
 
+/**
+ The service for providing list items from the API
+ */
+
 struct ListService: ListServiceable {
     let session: URLSession
     
+    /**
+         An asychronous method for retrieving the list items from the API
+     - parameters:
+            - completion: An escaping closure for handling the result of the API
+     */
+
     func fetchList(completion: @escaping (Result<ListResponse, Error>) -> Void) {
         guard let url = URL(string: Configuration.apiBaseURL.absoluteString + "/hiring.json") else {
             completion(.failure(NetworkError.badURL))

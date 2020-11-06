@@ -18,6 +18,12 @@ final class ListPresenter: ListPresentable {
         self.listService = listService
     }
     
+    /**
+     Retrieves the list items asynchronously and arranges them into a collection of `ListSection`
+     - parameters:
+        - completion: An escaping closure for handling the `Result` containing the collection of `ListSection`
+     */
+    
     func getList(completion: @escaping (Result<[ListSection], Error>) -> Void) {
         self.listService.fetchList { (result) in
             let sectionResult: Result<[ListSection], Error>

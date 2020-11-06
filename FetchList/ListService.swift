@@ -14,7 +14,11 @@ enum NetworkError: Error {
     case invalidData
 }
 
-struct ListService {
+protocol ListServiceable {
+    func fetchList(completion: @escaping (Result<ListResponse, Error>) -> Void)
+}
+
+struct ListService: ListServiceable {
     let session: URLSession
     
     func fetchList(completion: @escaping (Result<ListResponse, Error>) -> Void) {

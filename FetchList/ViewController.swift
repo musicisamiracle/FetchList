@@ -8,12 +8,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-    let presenter: ListPresenter
+    let presenter: ListPresentable
     var listSections: [ListSection] = []
 
     @IBOutlet weak var tableView: UITableView!
     
-    init?(coder: NSCoder, presenter: ListPresenter) {
+    init?(coder: NSCoder, presenter: ListPresentable) {
         self.presenter = presenter
         super.init(coder: coder)
     }

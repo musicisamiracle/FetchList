@@ -7,10 +7,14 @@
 
 import Foundation
 
-final class ListPresenter {
-    let listService: ListService
+protocol ListPresentable {
+    func getList(completion: @escaping (Result<[ListSection], Error>) -> Void)
+}
+
+final class ListPresenter: ListPresentable {
+    let listService: ListServiceable
     
-    init(listService: ListService) {
+    init(listService: ListServiceable) {
         self.listService = listService
     }
     
@@ -31,7 +35,7 @@ final class ListPresenter {
         }
     }
     
-    func createSections(from list: ListResponse) -> [ListSection] {
+    private func createSections(from list: ListResponse) -> [ListSection] {
         var sectionDict: [Int: [ListResponseItem]] = [:]
         for item in list {
             let name = item.name ?? ""

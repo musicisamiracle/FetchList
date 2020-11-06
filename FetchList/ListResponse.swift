@@ -19,7 +19,7 @@ import Foundation
 
 typealias ListResponse = [ListResponseItem]
 
-struct ListResponseItem: Codable {
+struct ListResponseItem: Codable, Equatable {
     let id: Int
     let listId: Int
     let name: String?

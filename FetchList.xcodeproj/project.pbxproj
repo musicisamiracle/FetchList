@@ -17,6 +17,9 @@
 		AB068C6B2554DE4A00F8B885 /* FetchListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB068C6A2554DE4A00F8B885 /* FetchListUITests.swift */; };
 		AB068C7F2554DFC700F8B885 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB068C7E2554DFC700F8B885 /* MainNavigationController.swift */; };
 		AB068C842554E04200F8B885 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB068C832554E04200F8B885 /* ViewControllerFactory.swift */; };
+		AB068C8F2555C66E00F8B885 /* ListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB068C8E2555C66E00F8B885 /* ListService.swift */; };
+		AB068C942555C6C500F8B885 /* ListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB068C932555C6C500F8B885 /* ListResponse.swift */; };
+		AB068C992555C8D900F8B885 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB068C982555C8D900F8B885 /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		AB068C6C2554DE4A00F8B885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB068C7E2554DFC700F8B885 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		AB068C832554E04200F8B885 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		AB068C8E2555C66E00F8B885 /* ListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListService.swift; sourceTree = "<group>"; };
+		AB068C932555C6C500F8B885 /* ListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListResponse.swift; sourceTree = "<group>"; };
+		AB068C982555C8D900F8B885 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,9 @@
 				AB068C562554DE4A00F8B885 /* Info.plist */,
 				AB068C7E2554DFC700F8B885 /* MainNavigationController.swift */,
 				AB068C832554E04200F8B885 /* ViewControllerFactory.swift */,
+				AB068C8E2555C66E00F8B885 /* ListService.swift */,
+				AB068C932555C6C500F8B885 /* ListResponse.swift */,
+				AB068C982555C8D900F8B885 /* Configuration.swift */,
 			);
 			path = FetchList;
 			sourceTree = "<group>";
@@ -266,8 +275,11 @@
 			files = (
 				AB068C4D2554DE4700F8B885 /* ViewController.swift in Sources */,
 				AB068C842554E04200F8B885 /* ViewControllerFactory.swift in Sources */,
+				AB068C942555C6C500F8B885 /* ListResponse.swift in Sources */,
 				AB068C492554DE4700F8B885 /* AppDelegate.swift in Sources */,
+				AB068C8F2555C66E00F8B885 /* ListService.swift in Sources */,
 				AB068C7F2554DFC700F8B885 /* MainNavigationController.swift in Sources */,
+				AB068C992555C8D900F8B885 /* Configuration.swift in Sources */,
 				AB068C4B2554DE4700F8B885 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
